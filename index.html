@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html long="en">
+<head>
+  <meta charset="UFT-8">
+  <meta name="viewport" content="width=device-width, initial-schale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="css/lab.css">
+<title>main</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+// Shorthand for $( document ).ready()
+$(function() {
+    $(".toggle").on("click", function(){
+      if($(".item").hasClass("active")){
+         $(".item").removeClass("active");
+        }
+        else{
+            $(".item").addClass("active");
+        }
+    })
+});
+</script>
+<body>
+<nav>
+  <ul class="menu">
+     <li class="logo"><a href="#">Dream On</a></li>
+     <li class="item"><a href="#">About</a></li>
+     <li class="item"><a href="contact.html">Contact</a></li>
+     <li class="item"><a href="photo.html">Phhotography</a></li>
+     <li class="item"><a href="beta.html">Beta</a></li>
+     <li class="item button"><a href="#">Login</a></li>
+     <li class="item button secondary"><a href="#">Sing Up</a></li>
+     <li class="toggle"><span class="bars"></span></li>
+
+</ul>
+</nav>
+    <section>
+      <div class="hero">
+        <img src="img/openGrass.jpg" alt="">
+        <h1 class="headline">Enjoy Life</h1>
+      </div>
+     </section>
+  </head>
+
+  <div class="slider"></div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
+integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"
+  integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="js/labf.js"></script>
+
+</body>
+</html>
